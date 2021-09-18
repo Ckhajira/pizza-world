@@ -1,3 +1,16 @@
 .logo{
     display: flex;
 }
+nav a{
+    text-decoration: none;
+}
+nav li{
+    list-style-type: none;
+}
+nav ul{
+    display: flex;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
