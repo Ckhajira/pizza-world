@@ -64,7 +64,13 @@
         </div>
     </div>
 
-    <select id="getsize">
+    <select id="getsize" onchange="getSize();">
+        <option value="700">Small(ksh 700)</option>
+        <option value="1000">Medium(ksh 1000)</option>
+        <option value="1500">Large(ksh 1500)</option>
+    </select>
+
+    <select id="getcrust" onchange="getCrust();">
         <option value="700">Small(ksh 700)</option>
         <option value="1000">Medium(ksh 1000)</option>
         <option value="1500">Large(ksh 1500)</option>
