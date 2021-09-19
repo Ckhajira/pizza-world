@@ -32,14 +32,16 @@ header{
     min-height: 100vh;
     min-width: 90vw;
     background-repeat: no-repeat;
+  
     
 }
 .about-image{
-    width: 100%;
+    width: 90%;
+    margin-left: 2rem;
     
 }
 .about{
-    background-color: rgb(255, 222, 160);
+    bac
 }
 .about-content{
     background-color: white;
@@ -48,8 +50,13 @@ header{
     padding: 0;
 }
 .about-background{
-    background-color: white;
-}
+   
 .about h1{
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.about p{
+    text-align: center;
+    margin-right: 2rem;
 }
