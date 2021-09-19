@@ -106,13 +106,13 @@ header {
     width: 10rem;
 }
 .order p{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .order-btn{
     margin-top: 2rem;
 }
 .order h1{
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 header a{
     text-decoration: none;
@@ -120,5 +120,36 @@ header a{
 }
 .menu img{
     height: 200px;
+    width: 350px;
+    
+}
+.menu-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu-items-crusts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu-items-crusts img{
     width: 250px;
+    height: 200px;
+}
+.menu{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+.menu h1{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.menu h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.menu p{
+    text-align: center;
 }
