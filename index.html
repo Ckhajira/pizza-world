@@ -17,17 +17,17 @@
 <body>
     <div class="container-flui">
         <header>
-            <div class="logo">
+            <a href="./index.html"><div class="logo">
                 <img src="./images/pizza-wallpaper-hd-1920x1440-390191.jpg" height="40px" width="40px">
                 <h3>Pizza World</h3>
-            </div>
+            </div></a>
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Order</a></li>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#menu-section">Menu</a></li>
+                    <li><a href="#contact-section">Contact Us</a></li>
+                    <li><a href="#order-section">Order</a></li>
 
                 </ul>
             </nav>
@@ -44,7 +44,7 @@
                     <img class="about-image" src="./images/pizza-6097011_640.png">
                 </div>
                 <div class="col-6">
-                    <h1>About Us</h1>
+                    <h1 id="about-section">About Us</h1>
                     <p>Pizza World was founded in 2010 after much demand from the general public. It started from a
                         home
                         kitchen
@@ -64,75 +64,81 @@
         </div>
     </div>
 
-    <select id="getsize" onchange="getSize();">
-        <option value="">Choose Pizza size</option>
-        <option value="800">Small(ksh 800)</option>
-        <option value="1000">Medium(ksh 1000)</option>
-        <option value="1500">Large(ksh 1500)</option>
-    </select>
-
-    <select id="getcrust" onchange="getCrust();">
-        <option value="">Choose Pizza Crust</option>
-        <option value="300">Vegan(ksh 300)</option>
-        <option value="500">Crispy(ksh 500)</option>
-        <option value="200">Gluten-free(ksh 200)</option>
-        <option value="400">Cauliflower(ksh 400)</option>
-
-
-    </select>
-
-
-
-
-
-
-    <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input spinach" id="defaultInline3" onclick="getSpinach();">
-        <label class="custom-control-label" for="defaultInline3" id="Spinach" value="200">Spinach ksh.200</label>
-    </div>
-    <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input onion" id="defaultInline2" onclick="getOnion();">
-        <label class="custom-control-label" for="defaultInline2" id="Onions" value="300">Onions ksh.300</label>
-    </div>
-    <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="getPep();">
-        <label class="custom-control-label" for="defaultInline1" id="Pepperoni" value="400">Pepperoni ksh.400</label>
-    </div>
-    <div class="custom-control custom-checkbox custom-control-inline ">
-        <input type="checkbox" class="custom-control-input bacon" id="defaultInline5" onclick="getBacon();">
-        <label class="custom-control-label" for="defaultInline5" id="Bacon" value="200">Bacon ksh.200</label>
-    </div>
-    <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input pepper" id="defaultInline4" onclick="getPepper();">
-        <label class="custom-control-label" for="defaultInline4" id="Peppers" value="100">Green Peppers ksh.100</label>
+    <div class="menu">
+        <h1>Menu</h1>
+        <img src="https://cdn.pixabay.com/photo/2017/03/05/19/56/wood-fired-pizzas-2119644__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/20/17/america-1238742__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2017/05/24/19/32/pizza-2341377__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2014/02/06/09/03/pizza-259794__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2018/03/04/20/05/pizza-3199081__340.jpg">
+        <img src="https://cdn.pixabay.com/photo/2014/08/05/23/11/pizza-411089__340.jpg">
+    
     </div>
 
+    <div class="order">
+        <h1 id="order-section">Order</h1>
+        <p><strong> Please select the pizza size that you would like:</strong> </p>
+        <select id="getsize" onchange="getSize();">
+            <option value="">Choose Pizza size</option>
+            <option value="800">Small(ksh 800)</option>
+            <option value="1000">Medium(ksh 1000)</option>
+            <option value="1500">Large(ksh 1500)</option>
+        </select>
+        <p><strong>Please select the crust that you would like:</strong> </p>
+        <select id="getcrust" onchange="getCrust();">
+            <option value="">Choose Pizza Crust</option>
+            <option value="300">Vegan(ksh 300)</option>
+            <option value="500">Crispy(ksh 500)</option>
+            <option value="200">Gluten-free(ksh 200)</option>
+            <option value="400">Cauliflower(ksh 400)</option>
+        </select>
+
+        <p><strong>Please select the toppings that you would like:</strong> </p>
+        <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input spinach" id="defaultInline3" onclick="getSpinach();">
+            <label class="custom-control-label" for="defaultInline3" id="Spinach" value="200">Spinach ksh.200</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input onion" id="defaultInline2" onclick="getOnion();">
+            <label class="custom-control-label" for="defaultInline2" id="Onions" value="300">Onions ksh.300</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="getPep();">
+            <label class="custom-control-label" for="defaultInline1" id="Pepperoni" value="400">Pepperoni
+                ksh.400</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline ">
+            <input type="checkbox" class="custom-control-input bacon" id="defaultInline5" onclick="getBacon();">
+            <label class="custom-control-label" for="defaultInline5" id="Bacon" value="200">Bacon ksh.200</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input pepper" id="defaultInline4" onclick="getPepper();">
+            <label class="custom-control-label" for="defaultInline4" id="Peppers" value="100">Green Peppers
+                ksh.100</label>
+        </div>
+
+        <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input sausage" id="defaultInline6" onclick="getSausage();">
+            <label class="custom-control-label" for="defaultInline6" id="Sausage" value="200">Sausage ksh.200</label>
+        </div>
+
+        <p><strong>Please enter the number of pizzas that you would like:</strong> </p>
+        <input type="number" id="getnumber" class="num">
 
 
+        <button type="button" id="takeorder" class="bg-info order-btn" onclick="doCalculation();">ORDER</button>
+        <p id="appear"></p>
 
+        <div id="I">
+            Do you want your pizza delivered??
+            <button type="button" id="deliver" class="bg-success">YES</button>
+            <button type="button" id="no" class="bg-danger">NO</button><br>
+            <strong>Delivery is ksh.200</strong>
+        </div>
 
-    <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input sausage" id="defaultInline6" onclick="getSausage();">
-        <label class="custom-control-label" for="defaultInline6" id="Sausage" value="200">Sausage ksh.200</label>
+        <div id="ord">
+            <button type="button" id="take" class="bg-warning order-btn" onclick="addTotal();">CHECKOUT</button></div>
     </div>
-
-
-    <input type="number" id="getnumber">
-    </div>
-
-    <button type="button" id="takeorder" class="bg-info" onclick="doCalculation();">ORDER</button>
-    <p id="appear"></p>
-
-    <div id="I">
-        Do you want your pizza delivered??
-        <button type="button" id="deliver" class="bg-success">YES</button>
-        <button type="button" id="no" class="bg-danger">NO</button><br>
-        <strong>Delivery is ksh.200</strong>
-    </div>
-
-    <div id="ord">
-        <button type="button" id="take" class="bg-warning" onclick="addTotal();">CHECKOUT</button></div>
-
 
 </body>
 

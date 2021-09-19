@@ -81,7 +81,7 @@ function doCalculation() {
 function addTotal() {
     let add = (getSize() + getCrust() + getPep() + getOnion() + getSpinach() + getPepper() + getBacon() + getSausage()) * getNumber() + 200;
 
-    alert("Hello, your total cost is" + add + "it will be delivered at your place of choice, thank you for choosing Pizza World.");
+    alert("Hello, your total cost is" + add + ". It will be delivered at your place of choice. Thank you for choosing Pizza World.");
 
 }
 $(document).ready(function () {
