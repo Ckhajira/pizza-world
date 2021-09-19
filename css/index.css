@@ -1,69 +1,89 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
+    padding-left: 3.5rem;
 }
-nav a{
+nav{
+    padding-right: 3rem;
+}
+.logo h3{
+    padding-left: 0.5rem;
+}
+
+nav a {
     text-decoration: none;
     color: black;
     padding: 1.5em;
 }
-nav li{
+
+nav li {
     list-style-type: none;
 }
-nav ul{
+
+nav ul {
     display: flex;
 }
-header{
+
+
+header {
     display: flex;
     justify-content: space-between;
-    
+
     min-height: 10vh;
     align-items: center;
     background-color: rgb(236, 231, 224);
     background-color: rgb(255, 222, 160);
 }
-.back-image{
+
+.back-image {
     background-image: url(../images/pizza-6478478_1280.jpg);
     min-height: 100vh;
     min-width: 90vw;
     background-repeat: no-repeat;
-  
-    
+
+
 }
-.about-image{
+
+.about-image {
     width: 90%;
-    margin-left: 3rem;
+    margin-left: 2rem;
     border-radius: 2rem;
     margin-top: 5rem;
-   
-    
+
+
 }
+
 .about {
-    padding-top: 3rem ;
+    padding-top: 3rem;
 }
-.about-content{
+
+.about-content {
     background-color: white;
 }
-.container{
+
+.container {
     padding: 0;
 }
-.about-background{
+
+.about-background {
     background-color: rgb(210, 228, 255);
     background-color: white;
 }
-.about h1{
+
+.about h1 {
     text-align: center;
     margin-top: 6rem;
-    
+
 }
-.about p{
+
+.about p {
     text-align: center;
-    margin-right: 3rem;
+    margin-right: 2rem;
     line-height: 2rem;
-   
+
 }
