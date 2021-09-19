@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/index.css">
 
     <script src="./js/jquery.js" defer></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
 
 </head>
 
@@ -66,46 +66,49 @@
 
     <select id="getsize" onchange="getSize();">
         <option value="">Choose Pizza size</option>
-        <option value="700">Small(ksh 700)</option>
+        <option value="800">Small(ksh 800)</option>
         <option value="1000">Medium(ksh 1000)</option>
         <option value="1500">Large(ksh 1500)</option>
     </select>
 
     <select id="getcrust" onchange="getCrust();">
         <option value="">Choose Pizza Crust</option>
-        <option value="500">Crispy(ksh 500)</option>
         <option value="300">Vegan(ksh 300)</option>
-        <option value="400">Cauliflower(ksh 400)</option>
+        <option value="500">Crispy(ksh 500)</option>
         <option value="200">Gluten-free(ksh 200)</option>
+        <option value="400">Cauliflower(ksh 400)</option>
+
 
     </select>
 
 
-    <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="getPep();">
-        <label class="custom-control-label" for="defaultInline1" id="Pepperoni" value="200">Pepperoni ksh.200</label>
-    </div>
 
-    <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input onion" id="defaultInline2" onclick="getOnion();">
-        <label class="custom-control-label" for="defaultInline2" id="Onions" value="200">Onions ksh.200</label>
-    </div>
+
+
 
     <div class="custom-control custom-checkbox custom-control-inline">
         <input type="checkbox" class="custom-control-input spinach" id="defaultInline3" onclick="getSpinach();">
         <label class="custom-control-label" for="defaultInline3" id="Spinach" value="200">Spinach ksh.200</label>
     </div>
-
     <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input pepper" id="defaultInline4" onclick="getPepper();">
-        <label class="custom-control-label" for="defaultInline4" id="Peppers" value="200">Green Peppers ksh.200</label>
+        <input type="checkbox" class="custom-control-input onion" id="defaultInline2" onclick="getOnion();">
+        <label class="custom-control-label" for="defaultInline2" id="Onions" value="300">Onions ksh.300</label>
     </div>
-
-
+    <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="getPep();">
+        <label class="custom-control-label" for="defaultInline1" id="Pepperoni" value="400">Pepperoni ksh.400</label>
+    </div>
     <div class="custom-control custom-checkbox custom-control-inline ">
         <input type="checkbox" class="custom-control-input bacon" id="defaultInline5" onclick="getBacon();">
         <label class="custom-control-label" for="defaultInline5" id="Bacon" value="200">Bacon ksh.200</label>
     </div>
+    <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input pepper" id="defaultInline4" onclick="getPepper();">
+        <label class="custom-control-label" for="defaultInline4" id="Peppers" value="100">Green Peppers ksh.100</label>
+    </div>
+
+
+
 
 
     <div class="custom-control custom-checkbox custom-control-inline">
@@ -113,19 +116,23 @@
         <label class="custom-control-label" for="defaultInline6" id="Sausage" value="200">Sausage ksh.200</label>
     </div>
 
-    <select class="browser-default custom-select" id="getnumber" onchange="getNumber();">
-        <option value="1">1 </option>
-        <option value="2">2 </option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-    </select>
+
+    <input type="number" id="getnumber">
     </div>
+
+    <button type="button" id="takeorder" class="bg-info" onclick="doCalculation();">ORDER</button>
+    <p id="appear"></p>
+
+    <div id="I">
+        Do you want your pizza delivered??
+        <button type="button" id="deliver" class="bg-success">YES</button>
+        <button type="button" id="no" class="bg-danger">NO</button><br>
+        <strong>Delivery is ksh.200</strong>
+    </div>
+
+    <div id="ord">
+        <button type="button" id="take" class="bg-warning" onclick="addTotal();">CHECKOUT</button></div>
+
 
 </body>
 

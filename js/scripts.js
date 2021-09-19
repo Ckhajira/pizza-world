@@ -1,6 +1,7 @@
 function getSize() {
     let getSize = document.getElementById('getsize').value;
     return parseInt(getSize)
+
 }
 
 function getCrust() {
@@ -8,11 +9,16 @@ function getCrust() {
     return parseInt(getCrust)
 }
 
+function getNumber() {
+    var getNumber = document.getElementById("getnumber").value;
+    return parseInt(getNumber);
+}
+
 function getPep() {
     let Pep = 0;
     let pep = document.getElementById('defaultInline1');
     if (pep.checked === true) {
-        Pep = 200;
+        Pep = 400;
     }
     return parseInt(Pep)
 }
@@ -21,7 +27,7 @@ function getOnion() {
     var Onion = 0;
     var onion = document.getElementById("defaultInline2");
     if (onion.checked === true) {
-        Onion = 200;
+        Onion = 300;
 
     }
     return parseInt(Onion);
@@ -41,7 +47,7 @@ function getPepper() {
     var Pepper = 0;
     var pepper = document.getElementById("defaultInline4");
     if (pepper.checked === true) {
-        Pepper = 200;
+        Pepper = 100;
 
     }
     return parseInt(Pepper);
@@ -66,3 +72,20 @@ function getSausage() {
     }
     return parseInt(Sausage);
 }
+
+function doCalculation() {
+    var calculate = (getSize() + getCrust() + getPep() + getOnion() + getSpinach() + getPepper() + getBacon() + getSausage()) * getNumber();
+    document.getElementById("appear").innerHTML = "Hi,you want " + getNumber() + "pizza" + " It will cost " + (calculate);
+}
+
+function addTotal() {
+    let add = (getSize() + getCrust() + getPep() + getOnion() + getSpinach() + getPepper() + getBacon() + getSausage()) * getNumber() + 200;
+
+    alert("Hello, your total cost is" + add + "it will be delivered at your place of choice, thank you for choosing Pizza World.");
+
+}
+$(document).ready(function () {
+    $("#deliver").click(function () {
+        prompt("Where do you want your pizza delivered");
+    });
+})
