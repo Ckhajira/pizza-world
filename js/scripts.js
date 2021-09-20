@@ -75,7 +75,7 @@ function getSausage() {
 
 function doCalculation() {
     var calculate = (getSize() + getCrust() + getPep() + getOnion() + getSpinach() + getPepper() + getBacon() + getSausage()) * getNumber();
-    document.getElementById("appear").innerHTML = "Hi,you want " + getNumber() + "pizza" + " It will cost " + (calculate);
+    document.getElementById("appear").innerHTML = "Hi,you want " + getNumber() + " pizzas" + " It will cost " + (calculate);
 }
 
 function addTotal() {
